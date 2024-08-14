@@ -1,3 +1,9 @@
-:root{
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Playwrite+NG+Modern:wght@100..400&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Tiny5&display=swap');
 
+:root{
+  --colorRosado: #f780a3;
+  --margen: 10px;
+  --fuente: "Roboto", sans-serif;
+  --black: #000000;
+  --colorBody: #e0e0e0; 
 }
