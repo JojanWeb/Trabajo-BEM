@@ -1,0 +1,31 @@
+@import url(index.css);
+@import url(variables.css);
+@import url(card.css);
+
+.barra-navegacion{
+  grid-area: principal;
+  align-self: center;
+  justify-self: center;
+}
+
+.barra-navegacion__lista{
+  display: flex;
+  width: 614px;
+  height: 70px;
+  justify-content: s;
+  list-style-type: none;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--color-gris);
+  border-radius: var(--border-radius);
+}
+
+.lista__item{
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.item__link{
+  text-decoration: none;
+  color: var(--color-blanco);
+}
