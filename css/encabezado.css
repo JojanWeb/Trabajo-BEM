@@ -1,0 +1,63 @@
+@import url(index.css);
+@import url(variables_globales.css);
+@import url(card.css);
+
+.encabezado {
+  align-self: center;
+  justify-self: center;
+  grid-area: principal;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  text-align: center;
+  padding: var(--espaciado);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--sombra);
+}
+
+.encabezado__titulo {
+  font-size: var(--tamaño-titulo);
+  margin-bottom: var(--margen);
+}
+
+.encabezado__descripcion {
+  font-size: var(--tamaño-texto);
+  margin-bottom: var(--espaciado);
+}
+
+.encabezado__boton {
+  background-color: var(--color-amarillo-dorado);
+  color: var(--color-blanco);
+  border: none;
+  padding: var(--margen) 20px;
+  font-size: var(--tamaño-boton);
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.encabezado__boton:hover {
+  background-color: var(--color-rojo-claro);
+}
+
+.encabezado-area {
+  grid-area: modificaciones;
+}
+
+/* Modificaciones */
+
+.encabezado--gris {
+  background-color: var(--color-gris);
+}
+
+.encabezado__titulo--verde {
+  color: var(--color-verde-claro);
+}
+
+.encabezado__descripcion--fuente-grande {
+  font-size: 22px;
+}
+
+.encabezado__boton--grande {
+  padding: 15px 30px;
+  font-size: 18px;
+}

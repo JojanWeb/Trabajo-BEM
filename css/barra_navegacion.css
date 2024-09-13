@@ -1,18 +1,17 @@
 @import url(index.css);
-@import url(variables.css);
+@import url(variables_globales.css);
 @import url(card.css);
 
-.barra-navegacion{
+.barra-navegacion {
   grid-area: principal;
   align-self: center;
   justify-self: center;
 }
 
-.barra-navegacion__lista{
+.barra-navegacion__lista {
   display: flex;
   width: 614px;
   height: 70px;
-  justify-content: s;
   list-style-type: none;
   justify-content: space-evenly;
   align-items: center;
@@ -20,12 +19,49 @@
   border-radius: var(--border-radius);
 }
 
-.lista__item{
+.lista__item {
   display: flex;
   justify-content: space-evenly;
+  flex: 1;
 }
 
-.item__link{
+.item__link {
+  text-align: center;
   text-decoration: none;
   color: var(--color-blanco);
+  padding: 20px 40px;
+  flex: 1;
+  border-radius: var(--border-radius);
+}
+
+.item__link:hover {
+  background-color: var(--color-gris-oscuro);
+}
+
+.barra-navegacion-area {
+  grid-area: modificaciones;
+}
+/* primera modificacion */
+
+.barra-navegacion__lista--transparente {
+  background-color: transparent;
+}
+
+/* segunda modificacion */
+
+.item__link--negro {
+  color: var(--black);
+}
+
+/* tercera modificacion */
+
+.lista__item--bordes {
+  border: 1px solid var(--black);
+  border-radius: var(--border-radius);
+}
+
+/* cuerta modificacion */
+
+.item__link--hover-coral:hover {
+  background-color: var(--color-rosa-coral);
 }

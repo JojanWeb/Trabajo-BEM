@@ -1,0 +1,73 @@
+@import url(index.css);
+@import url(variables_globales.css);
+@import url(card.css);
+
+.tooltip {
+  grid-area: principal;
+  justify-self: center;
+  align-self: center;
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip__texto {
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--color-gris);
+  color: var(--color-blanco);
+  text-align: center;
+  border-radius: var(--border-radius);
+  padding: var(--margen);
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  box-shadow: 0 4px 8px var(--sombra);
+}
+
+.tooltip:hover .tooltip__texto {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip__boton {
+  padding: 20px 30px;
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-size: var(--tamaño-boton);
+  transition: background-color 0.3s;
+}
+
+.tooltip__boton:hover {
+  background-color: var(--color-rosa-coral);
+}
+
+.tooltip-area {
+  grid-area: modificaciones;
+}
+
+/* Modificaciones */
+
+.tooltip__texto--grande {
+  width: 180px;
+  font-size: 1.2rem;
+}
+
+.tooltip__texto--bordes-redondeados {
+  border-radius: 20px;
+}
+
+.tooltip__texto--fondo-color {
+  background-color: var(--color-amarillo-dorado);
+}
+
+.tooltip__boton--grande {
+  padding: 20px 50px;
+  font-size: 1.2rem;
+}

@@ -1,8 +1,8 @@
 @import url(index.css);
-@import url(variables.css);
+@import url(variables_globales.css);
 @import url(card.css);
 
-.barra-busqueda{
+.barra-busqueda {
   grid-area: principal;
   justify-self: center;
   align-self: center;
@@ -15,18 +15,18 @@
   align-items: center;
 }
 
-.barra-busqueda__icono{
+.barra-busqueda__icono {
   font-size: 30px;
   color: var(--color-blanco);
 }
 
-.barra-busqueda__icono:hover{
+.barra-busqueda__icono:hover {
   padding: 5px;
   border-radius: 50%;
   background-color: var(--color-gris-claro);
 }
 
-.barra-busqueda__textarea{
+.barra-busqueda__textarea {
   border: none;
   background-color: var(--color-gris-claro);
   border-radius: var(--border-radius);
@@ -35,30 +35,14 @@
   outline: none;
 }
 
-.barra-busqueda__textarea::placeholder{
+.barra-busqueda__textarea::placeholder {
   color: var(--color-blanco);
-  opacity: 0.7;
-}
-
-.barra-busqueda--top-left{
-  grid-area: top-left;
-}
-
-.barra-busqueda--top-rigth{
-  grid-area: top-rigth;
-}
-
-.barra-busqueda--bottom-rigth{
-  grid-area: bottom-rigth;
-}
-
-.barra-busqueda--bottom-left{
-  grid-area: bottom-left;
+  opacity: 0.9;
 }
 
 /* Primera modificacion */
 
-.barra-busqueda--grande{
+.barra-busqueda--grande {
   height: 60px;
   width: 400px;
   grid-area: modificaciones;
@@ -66,14 +50,18 @@
 
 /* Segunda modificacion */
 
-.barra-busqueda--fondo-azul{
+.barra-busqueda--fondo-azul {
   background-color: var(--color-azul);
 }
 
-.barra-busqueda__icono--pequeño{
+/* Tercera modificacion */
+
+.barra-busqueda__icono--pequeño {
   font-size: var(--tamaño-texto);
 }
 
-.barra-busqueda--borde{
+/* Cuarta modificacion */
+
+.barra-busqueda--borde {
   border: 3px solid var(--black);
 }

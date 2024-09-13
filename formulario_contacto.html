@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/formulario_contacto.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="grid-area">
+      <header class="header">
+        <nav class="menu">
+          <ul class="menu__lista">
+            <li class="menu__item menu__item-inicio">
+              <a href="index.html" class="menu__link">INICIO</a>
+            </li>
+            <li class="menu__item">
+              <a href="card.html" class="menu__link">1</a>
+            </li>
+            <li class="menu__item">
+              <a href="barra_busqueda.html" class="menu__link">2</a>
+            </li>
+            <li class="menu__item">
+              <a href="barra_navegacion.html" class="menu__link">3</a>
+            </li>
+            <li class="menu__item">
+              <a href="formulario_contacto.html" class="menu__link">4</a>
+            </li>
+            <li class="menu__item">
+              <a href="galeria_imagenes.html" class="menu__link">5</a>
+            </li>
+            <li class="menu__item">
+              <a href="encabezado.html" class="menu__link">6</a>
+            </li>
+            <li class="menu__item">
+              <a href="pie_pagina.html" class="menu__link">7</a>
+            </li>
+            <li class="menu__item">
+              <a href="tabla.html" class="menu__link">8</a>
+            </li>
+            <li class="menu__item">
+              <a href="desplegable.html" class="menu__link">9</a>
+            </li>
+            <li class="menu__item">
+              <a href="toolip.html" class="menu__link">10</a>
+            </li>
+            <li class="menu__item menu__item-siguiente">
+              <a href="galeria_imagenes.html" class="menu__link">SIGUIENTE</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <h2 class="titulo-original">ORIGINAL</h2>
+
+      <form class="formulario-contacto">
+        <label for="nombre" class="formulario-contacto__etiqueta"
+          >Nombre:</label
+        >
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          class="formulario-contacto__campo"
+        />
+
+        <label for="correo" class="formulario-contacto__etiqueta"
+          >Correo:</label
+        >
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          class="formulario-contacto__campo"
+        />
+
+        <label for="mensaje" class="formulario-contacto__etiqueta"
+          >Mensaje:</label
+        >
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          class="formulario-contacto__campo formulario-contacto__campo--texto"
+        ></textarea>
+
+        <button type="submit" class="formulario-contacto__boton">Enviar</button>
+      </form>
+
+      <div class="linea"></div>
+
+      <h2 class="titulo-modificaciones">MODIFICACIONES</h2>
+
+      <form
+        class="formulario-contacto formulario-contacto--fondo-verde formulario-contacto-area"
+      >
+        <label for="nombre" class="formulario-contacto__etiqueta"
+          >Nombre:</label
+        >
+        <input
+          type="text"
+          id="nombre"
+          name="nombre"
+          class="formulario-contacto__campo formulario-contacto__campo--bordes-redondeados formulario-contacto__campo--fondo-color"
+        />
+
+        <label for="correo" class="formulario-contacto__etiqueta"
+          >Correo:</label
+        >
+        <input
+          type="email"
+          id="correo"
+          name="correo"
+          class="formulario-contacto__campo formulario-contacto__campo--bordes-redondeados formulario-contacto__campo--fondo-color"
+        />
+
+        <label for="mensaje" class="formulario-contacto__etiqueta"
+          >Mensaje:</label
+        >
+        <textarea
+          id="mensaje"
+          name="mensaje"
+          class="formulario-contacto__campo formulario-contacto__campo--bordes-redondeados formulario-contacto__campo--fondo-color"
+        ></textarea>
+
+        <button
+          type="submit"
+          class="formulario-contacto__boton formulario-contacto__boton--grande"
+        >
+          Enviar
+        </button>
+      </form>
+    </section>
+  </body>
+</html>

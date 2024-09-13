@@ -1,0 +1,75 @@
+@import url(index.css);
+@import url(variables_globales.css);
+@import url(card.css);
+
+.dropdown-form {
+  grid-area: principal;
+  justify-self: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  background-color: var(--color-blanco);
+  padding: var(--espaciado);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px var(--sombra);
+}
+
+.dropdown-form__etiqueta {
+  margin-bottom: var(--margen);
+  font-size: var(--tamaño-texto);
+  color: var(--color-gris);
+}
+
+.dropdown-form__select {
+  padding: var(--margen);
+  border: 1px solid var(--color-gris-claro);
+  border-radius: var(--border-radius);
+  background-color: var(--colorBody);
+  font-size: var(--tamaño-texto);
+  color: var(--color-gris);
+}
+
+.dropdown-form__select:focus {
+  border-color: var(--color-azul);
+  outline: none;
+}
+
+.dropdown-form__opcion {
+  padding: var(--margen);
+  background-color: var(--color-gris-claro);
+  color: var(--color-gris);
+}
+
+.dropdown-form__opcion:hover {
+  background-color: var(--color-rosa-coral);
+  color: var(--color-blanco);
+}
+
+.dropdown-form-area {
+  grid-area: modificaciones;
+}
+
+/* Modificaciones */
+
+.dropdown-form__select--grande {
+  font-size: 20px;
+  padding: var(--espaciado);
+}
+
+.dropdown-form__select--bordes-dobles {
+  border: 3px double var(--color-amarillo-dorado);
+}
+
+.dropdown-form__etiqueta--color-rojo {
+  color: var(--color-rojo-claro);
+}
+
+.dropdown-form__opcion--resaltada {
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+}
+
+.dropdown-form--fondo-verde {
+  background-color: var(--color-verde-claro);
+}

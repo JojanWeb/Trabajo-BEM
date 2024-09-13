@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+:root {
+  --color-rosa-coral: #ff6f61;
+  --margen: 10px;
+  --fuente: "Oswald", sans-serif;
+  --black: #000000;
+  --color-blanco: #fff;
+  --colorBody: #fff3de;
+  --color-gris: #808080;
+  --tamaño-texto: 18px;
+  --border-radius: 10px;
+  --color-gris-claro: #959595;
+  --tamaño-titulo: 20px;
+  --color-amarillo-dorado: #ffd700;
+  --color-azul: #17598f;
+  --color-gris-oscuro: #505050;
+  --color-verde-claro: #a2d9a1;
+  --color-rojo-claro: #ff4c4c;
+  --tamaño-boton: 16px;
+  --espaciado: 20px;
+  --sombra: rgba(0, 0, 0, 0.2);
+}

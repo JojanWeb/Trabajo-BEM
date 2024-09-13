@@ -1,19 +1,19 @@
-@import url(variables.css);
+@import url(variables_globales.css);
 
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: var(--fuente);
 }
 
-body{
+body {
   background-color: var(--colorBody);
   height: 100vh;
   display: flex;
 }
 
-.menu{
+.menu {
   align-self: center;
   margin: 0 auto;
   width: 600px;
@@ -22,7 +22,7 @@ body{
   border-radius: 10px;
 }
 
-.menu__lista{
+.menu__lista {
   width: 100%;
   display: flex;
   flex-flow: row wrap;
@@ -30,7 +30,7 @@ body{
   align-items: center;
 }
 
-.menu__item{
+.menu__item {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,23 +39,23 @@ body{
   border: 1px solid #474747;
 }
 
-.menu__item:hover{
+.menu__item:hover {
   background-color: #434343;
 }
 
-.menu__link{
+.menu__link {
   text-align: center;
   text-decoration: none;
   color: #fff;
   padding: 20px;
 }
 
-.menu__item-inicio{
+.menu__item-inicio {
   width: 90px;
   border-radius: 10px 0 0 10px;
 }
 
-.menu__item-siguiente{
+.menu__item-siguiente {
   width: 110px;
   border-radius: 0px 10px 10px 0;
 }

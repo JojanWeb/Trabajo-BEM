@@ -1,0 +1,63 @@
+@import url(index.css);
+@import url(variables_globales.css);
+@import url(card.css);
+
+.tabla {
+  grid-area: principal;
+  justify-self: center;
+  align-self: center;
+  width: 90%;
+  border-collapse: collapse;
+  background-color: var(--color-blanco);
+}
+
+.tabla__cabecera {
+  background-color: var(--color-azul);
+}
+
+.tabla__fila {
+  border-bottom: 1px solid var(--color-gris-claro);
+}
+
+.tabla__celda {
+  padding: var(--margen);
+  text-align: left;
+  font-size: var(--tamaño-texto);
+}
+
+.tabla__cuerpo tr:nth-child(even) {
+  background-color: var(--color-gris-claro);
+}
+
+.tabla__cuerpo tr:hover {
+  background-color: var(--color-rosa-coral);
+}
+
+.tabla-area {
+  grid-area: modificaciones;
+}
+
+/* Modificaciones */
+
+.tabla__celda--header {
+  font-weight: bold;
+  color: var(--color-blanco);
+  background-color: var(--color-gris-oscuro);
+}
+
+.tabla__celda--resaltado {
+  font-weight: bold;
+  color: var(--color-amarillo-dorado);
+}
+
+.tabla__fila--sombra {
+  box-shadow: 0 2px 4px var(--sombra);
+}
+
+.tabla--bordes-doble {
+  border: 2px double var(--black);
+}
+
+.tabla__celda--bordes {
+  border: 1px solid var(--black);
+}

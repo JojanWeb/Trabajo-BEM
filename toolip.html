@@ -3,7 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/card.css" />
+    <link rel="stylesheet" href="css/toolip.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -45,7 +49,7 @@
               <a href="toolip.html" class="menu__link">10</a>
             </li>
             <li class="menu__item menu__item-siguiente">
-              <a href="barra_busqueda.html" class="menu__link">SIGUIENTE</a>
+              <a href="index.html" class="menu__link">SIGUIENTE</a>
             </li>
           </ul>
         </nav>
@@ -53,28 +57,21 @@
 
       <h2 class="titulo-original">ORIGINAL</h2>
 
-      <div class="card">
-        <h3 class="card__titulo">Dragon</h3>
-        <img src="multimedia/image2.jpg" alt="" class="card__imagen" />
-        <p class="card__descripcion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit.
-        </p>
+      <div class="tooltip">
+        <span class="tooltip__texto">Este es un tooltip</span>
+        <button class="tooltip__boton">Hover me</button>
       </div>
 
       <div class="linea"></div>
 
       <h2 class="titulo-modificaciones">MODIFICACIONES</h2>
 
-      <div class="card card--grande card--fondo-oscuro">
-        <h3 class="card__titulo card__titulo--resaltado">Dragon</h3>
-        <img
-          src="multimedia/image2.jpg"
-          alt=""
-          class="card__imagen card__imagen--redonda"
-        />
-        <p class="card__descripcion">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, sit.
-        </p>
+      <div class="tooltip tooltip-area">
+        <span
+          class="tooltip__texto tooltip__texto--grande tooltip__texto--bordes-redondeados tooltip__texto--fondo-color"
+          >Este es un tooltip</span
+        >
+        <button class="tooltip__boton tooltip__boton--grande">Hover me</button>
       </div>
     </section>
   </body>

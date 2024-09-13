@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/barra_busqueda.css" />
+    <link rel="stylesheet" href="css/desplegable.css" />
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
@@ -49,7 +49,7 @@
               <a href="toolip.html" class="menu__link">10</a>
             </li>
             <li class="menu__item menu__item-siguiente">
-              <a href="barra_navegacion.html" class="menu__link">SIGUIENTE</a>
+              <a href="toolip.html" class="menu__link">SIGUIENTE</a>
             </li>
           </ul>
         </nav>
@@ -57,31 +57,66 @@
 
       <h2 class="titulo-original">ORIGINAL</h2>
 
-      <div class="barra-busqueda">
-        <i class="barra-busqueda__icono bx bx-search-alt-2"></i>
-        <input
-          type="text"
-          placeholder="Search..."
-          class="barra-busqueda__textarea"
-        />
-      </div>
+      <form class="dropdown-form">
+        <label for="opciones" class="dropdown-form__etiqueta"
+          >Selecciona una opción:</label
+        >
+        <select id="opciones" class="dropdown-form__select">
+          <option class="dropdown-form__opcion" value="opcion1">
+            Opción 1
+          </option>
+          <option class="dropdown-form__opcion" value="opcion2">
+            Opción 2
+          </option>
+          <option class="dropdown-form__opcion" value="opcion3">
+            Opción 3
+          </option>
+          <option class="dropdown-form__opcion" value="opcion4">
+            Opción 4
+          </option>
+        </select>
+      </form>
 
       <div class="linea"></div>
 
       <h2 class="titulo-modificaciones">MODIFICACIONES</h2>
 
-      <div
-        class="barra-busqueda barra-busqueda--grande barra-busqueda--fondo-azul barra-busqueda--borde barra-busqueda--top-left"
-      >
-        <i
-          class="barra-busqueda__icono barra-busqueda__icono--pequeño bx bx-search-alt-2"
-        ></i>
-        <input
-          type="text"
-          placeholder="Search..."
-          class="barra-busqueda__textarea"
-        />
-      </div>
+      <form class="dropdown-form dropdown-form--fondo-verde dropdown-form-area">
+        <label
+          for="opciones"
+          class="dropdown-form__etiqueta dropdown-form__etiqueta--color-rojo"
+          >Selecciona una opción:</label
+        >
+        <select
+          id="opciones"
+          class="dropdown-form__select dropdown-form__select--grande dropdown-form__select--bordes-dobles"
+        >
+          <option
+            class="dropdown-form__opcion dropdown-form__opcion--resaltada"
+            value="opcion1"
+          >
+            Opción 1
+          </option>
+          <option
+            class="dropdown-form__opcion dropdown-form__opcion--resaltada"
+            value="opcion2"
+          >
+            Opción 2
+          </option>
+          <option
+            class="dropdown-form__opcion dropdown-form__opcion--resaltada"
+            value="opcion3"
+          >
+            Opción 3
+          </option>
+          <option
+            class="dropdown-form__opcion dropdown-form__opcion--resaltada"
+            value="opcion4"
+          >
+            Opción 4
+          </option>
+        </select>
+      </form>
     </section>
   </body>
 </html>

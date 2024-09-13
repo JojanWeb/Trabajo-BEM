@@ -1,0 +1,70 @@
+@import url(index.css);
+@import url(variables_globales.css);
+@import url(card.css);
+
+.formulario-contacto {
+  grid-area: principal;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formulario-contacto__etiqueta {
+  margin-top: var(--margen);
+  font-size: var(--tamaño-texto);
+  color: #808080;
+}
+
+.formulario-contacto__campo {
+  padding: var(--margen);
+  margin-top: var(--margen);
+  border: 1px solid #959595;
+  border-radius: var(--border-radius);
+  font-size: var(--tamaño-texto);
+  background-color: #fff3de;
+}
+
+.formulario-contacto__boton {
+  margin-top: var(--espaciado);
+  padding: var(--margen) 20px;
+  font-size: var(--tamaño-boton);
+  background-color: var(--color-azul);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.formulario-contacto__boton:hover {
+  background-color: var(--color-rosa-coral);
+}
+
+.formulario-contacto-area {
+  grid-area: modificaciones;
+}
+
+/* Modificaciones */
+
+.formulario-contacto__boton--grande {
+  padding: 15px;
+  font-size: 20px;
+}
+
+.formulario-contacto__campo--bordes-redondeados {
+  border-radius: 20px;
+}
+
+.formulario-contacto__campo--fondo-color {
+  background-color: #959595;
+}
+
+.formulario-contacto--fondo-verde {
+  background-color: var(--color-verde-claro);
+}
